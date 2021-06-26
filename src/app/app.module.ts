@@ -144,6 +144,7 @@ import { CommandesComponent } from './view/admin/commandes/commandes.component';
 import { CommandeListComponent } from './view/admin/commandes/commande-list/commande-list.component';
 import { CommandeEditComponent } from './view/admin/commandes/commande-edit/commande-edit.component';
 import { CommandeViewComponent } from './view/admin/commandes/commande-view/commande-view.component';
+import {ConfirmationService, MessageService} from "primeng/api";
 
 @NgModule({
     imports: [
@@ -287,7 +288,7 @@ import { CommandeViewComponent } from './view/admin/commandes/commande-view/comm
     providers: [
         {provide: LocationStrategy, useClass: HashLocationStrategy},
         CountryService, CustomerService, EventService, IconService, NodeService,
-        PhotoService, ProductService, MenuService
+        PhotoService, ProductService, MenuService, MessageService, ConfirmationService
     ],
     bootstrap: [AppComponent]
 })

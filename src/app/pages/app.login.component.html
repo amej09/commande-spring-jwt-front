@@ -10,7 +10,7 @@
                         <!-- <h:panelGroup> -->
                             <label>Username</label>
                             <div class="login-input">
-                                <input id="input" type="text" pInputText> 
+                                <input id="input" type="text" pInputText [(ngModel)]="selected.username" >
                             </div>
                         <!-- </h:panelGroup> -->
                     </div>
@@ -18,7 +18,7 @@
                         <!-- <h:panelGroup> -->
                             <label>Password</label>
                             <div class="login-input">
-                                <input pPassword type="password" />
+                                <input pPassword type="password" [(ngModel)]="selected.password" />
                             </div>
                         <!-- </h:panelGroup> -->
                     </div>
@@ -26,13 +26,13 @@
                         <p-checkbox></p-checkbox>
                         <label> Remember me</label>
                     </div>
-    
+
                     <div class="p-col-12 p-sm-6 p-md-6 forgetpassword-container">
                         <a href="#" class="forget-password">Forget Password</a>
                     </div>
-    
+
                     <div class="p-col-12 p-sm-6 p-md-6">
-                            <button [routerLink]="['/']"  pButton type="button" icon="pi pi-check" label="Sign In"></button>
+                            <button (click)="signIn()"  pButton type="button" icon="pi pi-check" label="Sign In"></button>
                     </div>
                 </div>
             </div>
