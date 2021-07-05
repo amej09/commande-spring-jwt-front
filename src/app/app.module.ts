@@ -144,7 +144,12 @@ import { CommandesComponent } from './view/admin/commandes/commandes.component';
 import { CommandeListComponent } from './view/admin/commandes/commande-list/commande-list.component';
 import { CommandeEditComponent } from './view/admin/commandes/commande-edit/commande-edit.component';
 import { CommandeViewComponent } from './view/admin/commandes/commande-view/commande-view.component';
-import {ConfirmationService, MessageService} from "primeng/api";
+import {ConfirmationService, MessageService} from 'primeng/api';
+import { ClientsComponent } from './view/admin/clients/clients.component';
+import { ClientCreateComponent } from './view/admin/clients/client-create/client-create.component';
+import { ClientEditeComponent } from './view/admin/clients/client-edite/client-edite.component';
+import { ClientListComponent } from './view/admin/clients/client-list/client-list.component';
+import { ClientViewComponent } from './view/admin/clients/client-view/client-view.component';
 
 @NgModule({
     imports: [
@@ -283,7 +288,12 @@ import {ConfirmationService, MessageService} from "primeng/api";
         CommandesComponent,
         CommandeListComponent,
         CommandeEditComponent,
-        CommandeViewComponent
+        CommandeViewComponent,
+        ClientsComponent,
+        ClientCreateComponent,
+        ClientEditeComponent,
+        ClientListComponent,
+        ClientViewComponent
     ],
     providers: [
         {provide: LocationStrategy, useClass: HashLocationStrategy},
